@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="moveMaskView">
+        <attr name="textPressedColor" format="color" />
+        <attr name="textUnpressedColor" format="color" />
+        <attr name="unpressedBgColor" format="color" />
+        <attr name="pressedBgColor" format="color" />
+        <attr name="lineColor" format="color" />
+        <attr name="starTextColor" format="color" />
+    </declare-styleable>
+
+</resources>

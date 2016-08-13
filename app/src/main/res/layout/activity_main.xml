@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+        <TextView
+            android:id="@+id/set_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:text="拖动掩码区，自定义合适的4位连续掩码位置"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <demo.bashellwang.movemaskview.MoveMaskView
+            android:id="@+id/move_mask_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            custom:lineColor="#d8d8d8"
+            custom:pressedBgColor="#616060"
+            custom:starTextColor="#000000"
+            custom:textPressedColor="#a0a0a0"
+            custom:textUnpressedColor="#7a7a7a"
+            custom:unpressedBgColor="#ffffff" />
+
+        <Button
+            android:id="@+id/complete_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/move_mask_view"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="#095cc1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/set_bottom_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/complete_btn"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:text="拖动掩码区，自定义合适的4位连续掩码位置"
+            android:textColor="#adadad"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</FrameLayout>
